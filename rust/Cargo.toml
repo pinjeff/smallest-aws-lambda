@@ -1,0 +1,13 @@
+[package]
+name = "bootstrap"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ureq = "2.9.7"
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+panic = "abort"
